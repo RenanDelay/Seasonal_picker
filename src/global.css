@@ -1,0 +1,19 @@
+* {
+    border-spacing: 0;
+    font-family: "Roboto", sans-serif;
+    
+}
+*::selection {
+    background-color: #FFDB4F;
+    color: #0B1724;
+}
+:root {}
+
+html , body {
+    margin: 0;
+    padding: 0;
+}
+p,h1,h2,h3,h4,h5,h6,a {
+    margin: 0;
+    color: #0B1724;
+}
