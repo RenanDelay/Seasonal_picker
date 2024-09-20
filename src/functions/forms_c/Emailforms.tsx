@@ -17,7 +17,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ list }) => {
     return list
       .map((item) => {
         const formattedDate = new Date(item.date).toLocaleDateString('pt-BR'); 
-        return `Evento: ${item.name}\nData: ${formattedDate}\n;`
+        return `Evento: ${item.name}\nData: ${formattedDate}\n`;
       })
       .join('\n'); 
   };
