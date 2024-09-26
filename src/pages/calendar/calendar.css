@@ -73,9 +73,12 @@
     font-weight: bold;
   }
   
+
+  /*Selecionar/Desselecionar Tudo*/
   .arrow_container p {
     margin: 0;
     cursor: pointer;
+    width: 100px;
   }
 .background .content ._title .p2_title .change_date p {
     display: flex;
