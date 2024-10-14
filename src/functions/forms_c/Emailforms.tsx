@@ -1,8 +1,9 @@
-// Importações padrões
+// EmailForm.tsx
+
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import './emailforms.css'; // Import the CSS file for styling
 
-// Definição da lista de datas sazonais
 type listType = {
   name: string;
   date: Date;
@@ -12,18 +13,15 @@ interface EmailFormProps {
   list: listType[];
 }
 
-// Formulário de envio de e-mail
 const EmailForm: React.FC<EmailFormProps> = ({ list }) => {
   const form = useRef<HTMLFormElement>(null);
-
-  // Estados para controle de emails
   const [userEmail, setUserEmail] = useState<string>('');
   const [isUserEmailSet, setIsUserEmailSet] = useState(false);
   const [contributorEmails, setContributorEmails] = useState<string[]>([]);
   const [newContributorEmail, setNewContributorEmail] = useState<string>('');
   const [username, setUsername] = useState<string>('');
 
-  // Formatar a mensagem da lista de datas para o envio do template de e-mail
+  // Format the event list for the email body
   const formatListForEmail = (list: listType[]): string => {
     return list
       .map((item) => {
@@ -33,41 +31,39 @@ const EmailForm: React.FC<EmailFormProps> = ({ list }) => {
       .join('\n');
   };
 
-  // Função para enviar e-mails usando o emailjs
+  // Send email using emailjs
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Loop para enviar o e-mail para o usuário principal e todos os contribuidores
     const emailsToSend = [userEmail, ...contributorEmails];
-    
+
     for (let emailTo of emailsToSend) {
       if (form.current) {
         emailjs
           .send(
-            'contact_service', // Seu serviço
-            'contact_form', // Seu template
+            'contact_service', // Your service ID
+            'contact_form', // Your template ID
             {
               message: formatListForEmail(list),
               user_name: username,
               user_email: emailTo,
             },
-            'g1JrL406VtNUhD9mZ' // Seu public key
+            'g1JrL406VtNUhD9mZ' // Your public key
           )
           .then(
             () => {
-              console.log(`Email enviado para ${emailTo}`);
+              console.log(`Email sent to ${emailTo}`);
             },
             (error) => {
-              console.log(`Falha ao enviar e-mail para ${emailTo}: ${error.text}`);
+              console.log(`Failed to send email to ${emailTo}: ${error.text}`);
             }
           );
       } else {
-        console.log('Formulário vazio');
+        console.log('Form is empty');
       }
     }
   };
 
-  // Funções para adicionar e remover o e-mail do usuário
+  // Handle adding/removing user email
   const addUserEmail = () => {
     if (userEmail) setIsUserEmailSet(true);
   };
@@ -77,7 +73,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ list }) => {
     setIsUserEmailSet(false);
   };
 
-  // Funções para adicionar e remover e-mails contribuidores
+  // Handle adding/removing contributor emails
   const addContributorEmail = () => {
     if (newContributorEmail && !contributorEmails.includes(newContributorEmail)) {
       setContributorEmails([...contributorEmails, newContributorEmail]);
@@ -86,62 +82,72 @@ const EmailForm: React.FC<EmailFormProps> = ({ list }) => {
   };
 
   const removeContributorEmail = (email: string) => {
-    setContributorEmails(contributorEmails.filter(e => e !== email));
+    setContributorEmails(contributorEmails.filter((e) => e !== email));
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      {/* Email Usuário */}
-      <label>Email Usuário</label>
-      {!isUserEmailSet ? (
-        <>
-          <input
-            type="email"
-            value={userEmail}
-            onChange={(e) => setUserEmail(e.target.value)}
-            placeholder="Escrever e-mail"
-          />
-          <button type="button" onClick={addUserEmail}>Adicionar</button>
-        </>
-      ) : (
-        <div>
-          <span>{userEmail}</span>
-          <button type="button" onClick={removeUserEmail}>X</button>
+    <form ref={form} onSubmit={sendEmail} className="box">
+      <div className="mailtypes">
+        <div className="mailtype">
+          {/* User Email */}
+          <div className="title">
+            <label htmlFor="userEmail">E-mail Usuário</label>
+          </div>
+          <div className="df">
+            {!isUserEmailSet ? (
+              <>
+                <input
+                  type="email"
+                  value={userEmail}
+                  onChange={(e) => setUserEmail(e.target.value)}
+                  placeholder="Escrever e-mail"
+                  className="input-field"
+                />
+                <button type="button" className="add" onClick={addUserEmail}>
+                  Adicionar
+                </button>
+              </>
+            ) : (
+              <div className="user-email">
+                <span>{userEmail}</span>
+                <button type="button" onClick={removeUserEmail}>
+                  X
+                </button>
+              </div>
+            )}
+          </div>
         </div>
-      )}
 
-      {/* E-mails contribuintes */}
-      <label>E-mails contribuintes</label>
-      <div>
-        <input
-          type="email"
-          value={newContributorEmail}
-          onChange={(e) => setNewContributorEmail(e.target.value)}
-          placeholder="Escrever e-mail"
-        />
-        <button type="button" onClick={addContributorEmail}>Adicionar</button>
+        {/* Contributor Emails */}
+        <div className="mailtype">
+          <div className="title">E-mails Contribuintes</div>
+          <div className="df">
+            <input
+              type="email"
+              value={newContributorEmail}
+              onChange={(e) => setNewContributorEmail(e.target.value)}
+              placeholder="Escrever e-mail"
+              className="input-field"
+            />
+            <button type="button" className="add" onClick={addContributorEmail}>
+              Adicionar
+            </button>
+          </div>
+          <div className="list">
+            {contributorEmails.map((email, index) => (
+              <div key={index} className="mail">
+                <span>{email}</span>
+                <button type="button" onClick={() => removeContributorEmail(email)}>
+                  X
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-      <ul>
-        {contributorEmails.map((email, index) => (
-          <li key={index}>
-            {email}
-            <button type="button" onClick={() => removeContributorEmail(email)}>X</button>
-          </li>
-        ))}
-      </ul>
-
-      {/* Nome */}
-      <label>Nome</label>
-      <input
-        onChange={(e) => setUsername(e.target.value)}
-        id="user_name"
-        type="text"
-        name="user_name"
-        placeholder="Seu nome"
-      />
-
-      {/* Submit Button */}
-      <button type="submit">Enviar Datas</button>
+      <button type="submit" className="send">
+        Enviar Datas
+      </button>
     </form>
   );
 };

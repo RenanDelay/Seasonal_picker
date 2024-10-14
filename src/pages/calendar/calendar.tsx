@@ -11,6 +11,7 @@ import { extractData } from "../../functions/seasonal_generator/seasonalGenerato
 import Logotipo from "../../img/logotipo.svg";
 import Logotipow from "../../img/logotipow.svg";
 import Banner from "../../img/banner1.png";
+import EmailForm from "../../functions/forms_c/Emailforms";
 
 // Importando icones do React
 import { MdArrowBackIosNew, MdArrowForwardIos, MdClose} from "react-icons/md";
@@ -30,6 +31,8 @@ export type listType = {
 export default function Calendar() {
   const [monthSelect, setMonthSelect] = useState(0);
   const [tag, setTag] = useState<string>("");
+  const [filterDates , setFilterDates] = useState<Date[]>(getDates(366));
+  const [dateSelect , setDateSelect] = useState<Date>(new Date())
   const [weekdays, setWeekdays] = useState<string[]>([
     "Segunda-feira",
     "Terça-feira",
@@ -130,6 +133,21 @@ export default function Calendar() {
     }
   };
 
+  function filterDate(date:string | Date) {
+    let actual_date: Date = new Date(date);
+    actual_date.setDate(actual_date.getDate() + 1)
+    const month = actual_date.getMonth();
+    setMonthSelect(month);
+    setDateSelect(actual_date);
+    window.scrollTo({
+      top: 750,
+      left : 0,
+      behavior: "smooth",
+    
+    })
+    
+  }
+
   return (
     <div>
       <header className="header">
@@ -138,13 +156,43 @@ export default function Calendar() {
             <a href="#" className="logo">
               <img src={Logotipo} alt="" />
             </a>
-            <div className="date">Set. - Otu. 2024</div>
+            <div className="date">
+              <div
+                className="bef"
+                style={{
+                  background: monthSelect == 0 ? "#f6f6f6" : "#FFDB4F",
+                }}
+              >                
+              </div>
+              <p>{month_list[monthSelect]}</p>
+              <div
+                style={{
+                  background: monthSelect >= 11 ? "#f6f6f6" : "#FFDB4F",
+                }}
+                className="aft"
+              >
+                
+              </div>
+            </div>
             <div className="ba">
-              <div className="bef"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1L1.5 6L6.5 11" stroke="#565656"/></svg></div>
-              <div className="aft"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 1L5.5 6L0.5 11" stroke="#565656"/></svg></div>
+              <div className="bef"
+                              onClick={() => {
+                                if (monthSelect != 0) {
+
+                                  setMonthSelect(monthSelect - 1);
+                                }
+                              }}><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1L1.5 6L6.5 11" stroke="#565656"/></svg></div>
+              <div className="aft"
+              onClick={() => {
+                  if (monthSelect != 11) {
+                    setMonthSelect(monthSelect + 1);
+                  }
+                }}><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 1L5.5 6L0.5 11" stroke="#565656"/></svg></div>
             </div>
             <div className="form">
-              <input type="text" name="search" id="search" placeholder="Buscar uma data" />
+              <input type="date" name="search" id="search" placeholder="Buscar uma data" onChange={(e) => {
+                filterDate(e.target.value)
+              }} />
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.49977 1.91687e-08C7.14436 0.000115492 5.80863 0.324364 4.60402 0.945694C3.39941 1.56702 2.36086 2.46742 1.575 3.57175C0.789144 4.67609 0.278775 5.95235 0.0864735 7.29404C-0.105828 8.63574 0.0255146 10.004 0.469544 11.2846C0.913572 12.5652 1.65741 13.7211 2.639 14.6557C3.62059 15.5904 4.81147 16.2768 6.11228 16.6576C7.41309 17.0384 8.78611 17.1026 10.1168 16.8449C11.4475 16.5872 12.6972 16.015 13.7618 15.176L17.4138 18.828C17.6024 19.0102 17.855 19.111 18.1172 19.1087C18.3794 19.1064 18.6302 19.0012 18.8156 18.8158C19.001 18.6304 19.1062 18.3796 19.1084 18.1174C19.1107 17.8552 19.0099 17.6026 18.8278 17.414L15.1758 13.762C16.1638 12.5086 16.7789 11.0024 16.9509 9.41573C17.1228 7.82905 16.8446 6.22602 16.148 4.79009C15.4514 3.35417 14.3646 2.14336 13.0121 1.29623C11.6595 0.449106 10.0957 -0.000107143 8.49977 1.91687e-08ZM1.99977 8.5C1.99977 6.77609 2.68458 5.12279 3.90357 3.90381C5.12256 2.68482 6.77586 2 8.49977 2C10.2237 2 11.877 2.68482 13.096 3.90381C14.3149 5.12279 14.9998 6.77609 14.9998 8.5C14.9998 10.2239 14.3149 11.8772 13.096 13.0962C11.877 14.3152 10.2237 15 8.49977 15C6.77586 15 5.12256 14.3152 3.90357 13.0962C2.68458 11.8772 1.99977 10.2239 1.99977 8.5Z" fill="#E0E0E0"/></svg>
             </div>
             <div className="navbar-toggler"></div>
@@ -172,7 +220,7 @@ export default function Calendar() {
               <div>DOM.</div>
             </div>
             <div className="days">
-              {getDates(366)
+              {filterDates
                 .filter((res) => new Date(res).getMonth() == monthSelect)
                 .map((res, i) => {
                   const month = new Date(res).getMonth();
@@ -186,7 +234,7 @@ export default function Calendar() {
                       new Date(res).toLocaleDateString()
                   );
                   return (
-                    <div className="container_day" key={i}>
+                    <div className={`container_days ${new Date(res).toLocaleDateString() == new Date(dateSelect).toLocaleDateString() ? "search" : ""}`} key={i}>
                       <p>{new Date(res).getDate()}</p>
                       <div className="list_container">
                         {seasonal_day?.map((dataRes, inList) => {
@@ -251,9 +299,36 @@ export default function Calendar() {
             <div className="col-lg-4">
               <div className="datepicker">
                 <div className="top">
-                  <div className="bef"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.5L1.5 9L9 16.5" stroke="#939393" stroke-width="2"/></svg></div>
-                  <div className="title">Outubro de 2024</div>
-                  <div className="aft"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.5L8.5 9L1 16.5" stroke="#939393" stroke-width="2"/></svg></div>
+                  <div className="bef"                              
+                              onClick={() => {
+                                if (monthSelect != 0) {
+                                  setMonthSelect(monthSelect - 1);
+                                }
+                              }}><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.5L1.5 9L9 16.5" stroke="#939393" stroke-width="2"/></svg></div>
+                  <div className="title">
+              <div
+                className="bef"
+                style={{
+                  background: monthSelect == 0 ? "#f6f6f6" : "#FFDB4F",
+                }}
+              >                
+              </div>
+              <p>{month_list[monthSelect]}</p>
+              <div
+                style={{
+                  background: monthSelect >= 11 ? "#f6f6f6" : "#FFDB4F",
+                }}
+                className="aft"
+              >
+                
+              </div>
+            </div>
+                  <div className="aft"              
+                  onClick={() => {
+                  if (monthSelect != 11) {
+                    setMonthSelect(monthSelect + 1);
+                  }
+                }}><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.5L8.5 9L1 16.5" stroke="#939393" stroke-width="2"/></svg></div>
                 </div>
                 <div className="dates">
                   <div className="wd">
@@ -267,8 +342,15 @@ export default function Calendar() {
                   </div>
                   <div className="days">
                     {
-                      Array.from({length:31}).map((res,i)=>{
-                        return (<div>{i+1}</div>)
+                      filterDates.filter((res) => new Date(res).getMonth() == monthSelect).map((res,i)=>{
+                        
+                        return (<div onClick={() => {
+                          let filter_date =  new Date(res);
+                          filter_date.setDate(filter_date.getDate() - 1)
+                          filterDate(filter_date)
+                        }} style={{
+                          background: dateSelect.toLocaleDateString() == new Date(res).toLocaleDateString() ? "#d6d6d6" : "transparent"
+                        }}>{i+1}</div>)
                       })
                     }
                   </div>
@@ -279,57 +361,31 @@ export default function Calendar() {
               <div className="selected_dates">
                 <div className="title">Datas Selecionadas</div>
                 <div className="dts">
-                    {
-                      Array.from({length:13}).map((res,i)=>{
-                        return (<div>
-                          <p>Dia do Saci</p>
-                          <div className="rm">⨉</div>
-                        </div>)
-                      })
-                    }
+                {list?.map((res, i) => {
+              return (
+                <div className="list_item">
+                  <p>
+                    {res.name} ({new Date(res.date).toLocaleDateString()})
+                  </p>
+                  <MdClose
+                    size={"16px"}
+                    cursor={"pointer"}
+                    onClick={() => {
+                      const copy = list?.filter(
+                        (resul, index) => resul.name !== res.name
+                      );
+                      setList(copy);
+                    }}
+                  />
+                </div>
+              );
+            })}
                 </div>
               </div>
+
             </div>
             <div className="col-lg-4">
-              <div className="box">
-                <div className="mailtypes">
-                  <div className="mailtype">
-                    <div className="title">E-mail Usuário</div>
-                    <div className="df">
-                      <input type="text" name="email" id="email" placeholder="Escrever e-mail" />
-                      <div className="add">Adicionar</div>
-                    </div>
-                    <div className="list">
-                      <div className="mail">
-                        <p>Tete123@email.com.br</p>
-                        <div className="rm">⨉</div>
-                      </div>
-                      <div className="mail">
-                        <p>Tete123@email.com.br</p>
-                        <div className="rm">⨉</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mailtype">
-                    <div className="title">E-mails contribuentes</div>
-                    <div className="df">
-                      <input type="text" name="email" id="email" placeholder="Escrever e-mail" />
-                      <div className="add">Adicionar</div>
-                    </div>
-                    <div className="list">
-                      <div className="mail">
-                        <p>Tete123@email.com.br</p>
-                        <div className="rm">⨉</div>
-                      </div>
-                      <div className="mail">
-                        <p>Tete123@email.com.br</p>
-                        <div className="rm">⨉</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="send">Enviar Datas</div>
-              </div>
+            <EmailForm list={list}/>
             </div>
             <div className="col-12">
               <div className="ad"></div>

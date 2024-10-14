@@ -139,6 +139,12 @@
     border-bottom: 1px solid var(--line2);
     padding: 4.26rem 10px 10px;
 }
+.dates .table .days>*.search {
+    background-color: #d6d6d6;
+}
+.dates .table .days>*.search p {
+    color: white;
+}
 
 .dates .table .days>*>p{
     position: absolute;
@@ -150,7 +156,7 @@
 }
 
 .dates .table .days>* .list_container{
-    display: flex;
+    display: absolute;
     display: -webkit-flex;
     flex-direction: column;
     -ms-flex-direction: column;
