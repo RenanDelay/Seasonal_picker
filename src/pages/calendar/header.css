@@ -1,0 +1,138 @@
+.header{
+    position: sticky;
+    z-index: 1050;
+    inset: 0 auto auto 0;
+    background-color: var(--white);
+    width: 100%;
+    box-shadow: 0px 8px 30px -8px #7090b026;
+    padding: 1.86rem 0;
+}
+
+.header .navbar{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.header .navbar .logo,
+footer .logo{
+    width: clamp(10px,100%,219px);
+    max-height: 34px;
+    margin-right: clamp(1rem,7.29166vw,140px);
+}
+
+.header .navbar .logo img,
+footer .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -o-object-fit: contain;
+}
+
+.header .navbar .date{
+    color: var(--text2);
+    font-family: var(--inst);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1.1px;
+}
+
+.header .navbar .ba{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    grid-gap: 1rem;
+    height: 100%;
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    margin-right: clamp(1rem,2.60vw,50px);
+    padding: 0 25px;
+}
+
+.header .navbar .ba>*{
+    cursor: pointer;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    width: 40px;
+    height: 30px;
+    border: 1px solid var(--line);
+    border-radius: 68px;
+}
+
+.header .navbar .form{
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    width: clamp(10px,100%,391px);
+}
+
+.header .navbar .form input{
+    width: 100%;
+    color: var(--title);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    border: 1px solid #DBDBDB;
+    border-radius: 48px;
+    padding: 12px 4rem 12px 25px;
+}
+
+.header .navbar .form input::placeholder{
+    color: #C3C3C3;
+}
+
+.header .navbar .form svg{
+    position: absolute;
+    right: 28px;
+}
+
+.header .navbar .navbar-toggler{
+    cursor: pointer;
+    min-width: 30px;
+    aspect-ratio: 1/1;
+    background: url(../../img/barsy.svg) no-repeat center;
+    background-size: contain !important;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.header .navbar .navbar-toggler.active{
+    background: url(../../img/xx.svg) no-repeat center;
+    transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+}
+
+@media(min-width:992px){
+    .header .navbar .navbar-toggler{
+        display: none;
+        display: -webkit-none;
+    }
+}
+
+@media(max-width:1200px){
+    .header .navbar{
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+    }
+    .header .navbar .logo{
+        margin-right: 1rem;
+    }
+}
+
+@media(max-width:992px){
+    .header .navbar>*:not(.logo):not(.navbar-toggler){
+        display: none;
+        display: -webkit-none;
+    }
+}

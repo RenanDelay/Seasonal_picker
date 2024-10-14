@@ -2,7 +2,7 @@
 import Calendar from "./pages/calendar/calendar";
 
 //Style
-import "./global.css";
+//import "./global.css";
 
 function App() {
   return (

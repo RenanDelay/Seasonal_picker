@@ -1,0 +1,197 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html,
+body{
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+big,
+cite,
+code,
+em,
+font,
+img,
+small,
+strike,
+sub,
+sup,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tr,
+th,
+td{
+	border: none;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
+}
+
+blockquote::before,
+blockquote::after{
+	content: '';
+}
+
+svg,
+img,
+embed,
+object{
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+button{
+    border: none;
+    border-radius: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --main: #67B32E;
+    --bg: #F5F5F5;
+    --title: #3F3F3F;
+    --text: #AAAAAA;
+    --text2: #979797;
+    --line: #F2F2F2;
+    --line2: #E9E9E9;
+    --white: #fff;
+    --black: #000;
+    --inst: "Instrument Sans", sans-serif;
+    --int: "Inter", sans-serif;
+    --mont: "Montserrat", sans-serif;
+}
+
+body{
+    font-family: var(--inst);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+    background: #f2F2F2;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--title);
+    border-radius: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+input:focus-visible{
+    outline: none;
+    -moz-outline: none;
+}
+
+input[type="checkbox"]{
+    position: relative;
+    cursor: pointer;
+    min-width: 18px !important;
+    height: 18px !important;
+    border: none;
+    padding: 0;
+    appearance: none;
+}
+
+input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--white);
+    border-radius: 2px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.container{
+    max-width: calc(1420px + 140px);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(0*-1);
+    margin-right: calc(1.5rem * -.5);
+    margin-left: calc(1.5rem * -.5);
+}
+
+.row>*{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.col-12{
+    width: 100%;
+}
+
+@media(min-width:992px){
+    .col-lg-4{
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+@media(min-width:1200px){
+    .container{
+        padding: 0 70px;
+    }
+}
+
+@media(max-width:768px){
+    .dbtn{
+        grid-gap: 1rem;
+        clip-path: none;
+        -webkit-clip-path: none;
+    }
+    .dbtn img{
+        background-color: var(--black);
+    }
+}

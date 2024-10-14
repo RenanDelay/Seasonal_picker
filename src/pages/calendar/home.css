@@ -1,0 +1,543 @@
+.banners{
+    position: relative;
+}
+
+.banners img{
+    width: 100%;
+    aspect-ratio: 1/.4765625;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.banners .scroll{
+    position: absolute;
+    inset: auto 0 2.73rem 0;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    width: 19px;
+    height: 36px;
+    border: 1px solid var(--white);
+    border-radius: 41px;
+    background-color: #FFFFFF33;
+    margin: 0 auto;
+}
+
+.banners .scroll::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    width: 4px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--white);
+    animation: 2s linear infinite alternate godown;
+    -webkit-animation: 2s linear infinite alternate godown;
+    -moz-animation: 2s linear infinite alternate godown;
+    -ms-animation: 2s linear infinite alternate godown;
+    -o-animation: 2s linear infinite alternate godown;
+}
+
+@keyframes godown{0%{top: 6px;}25%{top: 3px;}50%{top: calc(100% - 6px);}100%{top: calc(100% - 9px);}}
+@-webkit-keyframes godown{0%{top: 6px;}25%{top: 3px;}50%{top: calc(100% - 6px);}100%{top: calc(100% - 9px);}}
+@-moz-keyframes godown{0%{top: 6px;}25%{top: 3px;}50%{top: calc(100% - 6px);}100%{top: calc(100% - 9px);}}
+@-ms-keyframes godown{0%{top: 6px;}25%{top: 3px;}50%{top: calc(100% - 6px);}100%{top: calc(100% - 9px);}}
+@-o-keyframes godown{0%{top: 6px;}25%{top: 3px;}50%{top: calc(100% - 6px);}100%{top: calc(100% - 9px);}}
+
+.dates{
+    position: relative;
+    padding: 7.73rem 0 1rem;
+}
+
+.dates .container{
+    max-width: calc(1420px + 140px);
+}
+
+.dates .ads{
+    position: absolute;
+    top: 7.73rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    grid-gap: 10px;
+    /* width: clamp(10px,100%,186px); */
+    width: clamp(10px,9.6875vw,186px);
+}
+
+.dates .ads:first-child{
+    left: 2rem;
+}
+
+.dates .ads:last-child{
+    right: 2rem;
+}
+
+.dates .ads>*{
+    width: 100%;
+    aspect-ratio: 1/1.95698;
+    background-color: #00000033;
+}
+
+.dates .table{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    border-left: 1px solid var(--line2);
+    border-top: 1px solid var(--line2);
+    background-color: var(--white);
+}
+
+.dates .table .wds{
+    display: flex;
+    display: -webkit-flex;
+    align-items: stretch;
+    border-bottom: 1px solid var(--line2);
+}
+
+.dates .table .wds>*.active::before{
+    content: '';
+    width: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--main);
+}
+
+.dates .table .wds>*{
+    flex: 0 1 calc(100%/7);
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    grid-gap: 10px;
+    text-transform: uppercase;
+    color: #CBCBCB;
+    font-family: var(--int);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    border-right: 1px solid var(--line2);
+}
+
+.dates .table .days{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.dates .table .days>*{
+    position: relative;
+    flex: 0 1 calc(100%/7);
+    border-right: 1px solid var(--line2);
+    border-bottom: 1px solid var(--line2);
+    padding: 4.26rem 10px 10px;
+}
+
+.dates .table .days>*>p{
+    position: absolute;
+    inset: 25px 25px auto auto;
+    color: #EBEBEB;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.dates .table .days>* .list_container{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    grid-gap: 5px;
+    overflow: hidden scroll;
+    height: 100%;
+    max-height: 86px;
+    padding-right: 11.5px;
+}
+
+.dates .table .days>* .list_container::-webkit-scrollbar{
+    width: 2px;
+}
+
+.dates .table .days>* .list_container::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.dates .table .days>* .list_container::-webkit-scrollbar-thumb{
+    background: #F5F5F5;
+    border-radius: 80px;
+}
+
+.dates .table .days>* .list_container>*{
+    position: relative;
+    cursor: pointer;
+    border-radius: 37px;
+    background-color: #F5F5F5;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    padding: 5px 1rem;
+}
+
+.dates .table .days>* .list_container>*.active{
+    background-color: var(--main);
+}
+
+.dates .table .days>* .list_container>*>p{
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.dates .table .days>* .list_container>*.active>p{
+    color: var(--white);
+}
+
+.dates .table .days>* .tag_description{
+    position: absolute;
+    z-index: 50;
+    inset: calc(100% + 5px) auto auto 0;
+    width: calc(100% - 1rem);
+    color: var(--text) !important;
+    border: 1px solid var(--line2);
+    background-color: var(--white);
+    padding: .5rem;
+    animation: .15s ease-in 1 forwards animation;
+    -webkit-animation: .15s ease-in 1 forwards animation;
+    -moz-animation: .15s ease-in 1 forwards animation;
+    -ms-animation: .15s ease-in 1 forwards animation;
+    -o-animation: .15s ease-in 1 forwards animation;
+}
+
+@keyframes animation {from {margin-top: 0px;opacity: 0;}to {opacity: 1;margin-top: 3px;}}
+@-webkit-keyframes animation {from {margin-top: 0px;opacity: 0;}to {opacity: 1;margin-top: 3px;}}
+@-moz-keyframes animation {from {margin-top: 0px;opacity: 0;}to {opacity: 1;margin-top: 3px;}}
+@-ms-keyframes animation {from {margin-top: 0px;opacity: 0;}to {opacity: 1;margin-top: 3px;}}
+@-o-keyframes animation {from {margin-top: 0px;opacity: 0;}to {opacity: 1;margin-top: 3px;}}
+
+.minf{
+    padding: 1rem 0 5.53rem;
+}
+
+.minf .container{
+    max-width: calc(1211px + 140px);
+}
+
+.minf .row{
+    grid-gap: 3.33rem 0;
+}
+
+.minf .row>*{
+    padding: 0 20px;
+}
+
+.minf .datepicker,
+.minf .selected_dates,
+.minf .box{
+    border: 1px solid var(--line);
+    border-radius: 0 0 15px 0;
+}
+
+.minf .datepicker .top{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    grid-gap: 1rem;
+    border-bottom: 1px solid var(--line);
+    padding: 24px 2.86rem;
+}
+
+.minf .datepicker .top .bef,
+.minf .datepicker .top .aft{
+    cursor: pointer;
+}
+
+.minf .datepicker .top .title{
+    color: #939393;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.minf .datepicker .dates{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    grid-gap: 10px;
+    padding: 9px 20px 38px;
+}
+
+.minf .datepicker .dates .wd{
+    display: flex;
+    display: -webkit-flex;
+    align-items: stretch;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 9px;
+}
+
+.minf .datepicker .dates .wd>*{
+    flex: 0 1 calc(100%/7);
+    text-align: center;
+    color: #5f5f5fb3;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.minf .datepicker .dates .days{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    grid-gap: 1rem 0;
+}
+
+.minf .datepicker .dates .days>*{
+    cursor: pointer;
+    flex: 0 1 calc(100%/7);
+    text-align: center;
+    color: #00000099;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.minf .datepicker .dates .days>*.lastMonth{
+    color: #C9C9C9;
+}
+
+.minf .selected_dates{
+    padding: 34px 20px 20px;
+}
+
+.minf .selected_dates .title,
+.minf .box .title{
+    color: var(--title);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.minf .selected_dates .dts,
+.minf .box .mailtypes>* .list{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    grid-gap: 5px;
+    overflow: hidden scroll;
+    height: 100%;
+    max-height: 350px;
+    padding-right: 2rem;
+}
+
+.minf .selected_dates .dts::-webkit-scrollbar,
+.minf .box .mailtypes>* .list::-webkit-scrollbar{
+    width: 5px;
+}
+
+.minf .selected_dates .dts::-webkit-scrollbar-track,
+.minf .box .mailtypes>* .list::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.minf .selected_dates .dts::-webkit-scrollbar-thumb,
+.minf .box .mailtypes>* .list::-webkit-scrollbar-thumb{
+    background: #0000002E;
+    border-radius: 15px;
+}
+
+.minf .selected_dates .dts>*,
+.minf .box .mailtypes>* .list>*{
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    border-radius: 37px;
+    background-color: #F5F5F5;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    padding: 6.5px 1rem;
+}
+
+.minf .selected_dates .dts>*>p,
+.minf .box .mailtypes>* .list>*>p{
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.minf .selected_dates .dts>* .rm,
+.minf .box .mailtypes>* .list>* .rm{
+    position: absolute;
+    inset: auto 1rem auto auto;
+    cursor: pointer;
+    color: #B9B9B9;
+    font-size: 17px;
+    line-height: 13px;
+}
+
+.minf .box{
+    padding: 2rem 2rem 20px;
+}
+
+.minf .box .mailtypes{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.minf .box .mailtypes>*:not(:last-child){
+    border-bottom: 1px solid var(--line2);
+    padding-bottom: 20px;
+}
+
+.minf .box .mailtypes>*{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    grid-gap: 10px;
+}
+
+.minf .box .title{
+    margin-bottom: 10px;
+}
+
+.minf .box .mailtypes>* .df{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.minf .box .mailtypes>* input{
+    width: 100%;
+    color: var(--title);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    border: 1px solid #DBDBDB;
+    border-radius: 40px;
+    padding: 10px 1rem;
+}
+
+.minf .box .mailtypes>* input::placeholder{
+    color: #C3C3C3;
+}
+
+.minf .box .mailtypes>* .add{
+    cursor: pointer;
+    color: var(--main);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    border-radius: 40px;
+    background-color: #67B32E26;
+    padding: 10px;
+}
+
+.minf .box .mailtypes>* .list{
+    max-height: 80px;
+    padding-right: 20px;
+}
+
+.minf .box .send{
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    border-radius: 40px;
+    background-color: var(--main);
+    padding: 10px;
+}
+
+.minf .ad{
+    width: 100%;
+    height: 225px;
+    background-color: #00000033;
+}
+
+@media(min-width:1300px){
+    .dates .container{
+        max-width: 100%;
+        padding: 0 clamp(70px,14.79166vw,18.93rem);
+    }
+}
+
+@media(max-width:1300px){
+    .dates .ads{
+        display: none;
+        display: -webkit-none;
+    }
+}
+
+@media(max-width:1200px){
+    .dates,
+    .minf{
+        padding: 2rem 0;
+    }
+    .dates .table{
+        overflow: scroll hidden;
+        padding-bottom: 10px;
+    }
+    .dates .table .wds,
+    .dates .table .days{
+        min-width: 1153px;
+    }
+}
+
+@media(max-width:992px){
+    .minf .row{
+        grid-gap: 2rem 0;
+    }
+}
+
+@media(max-width:768px){
+    .banners .scroll{
+        bottom: 1rem;
+    }
+    .banners img{
+        aspect-ratio: unset;
+        min-height: 366px;
+    }
+    .minf .datepicker .top,
+    .minf .selected_dates,
+    .minf .box{
+        padding: 1rem;
+    }
+    .minf .datepicker .dates{
+        padding: 9px 1rem 1rem;
+    }
+    .minf .datepicker .dates .days{
+        grid-gap: 10px 0;
+    }
+}
