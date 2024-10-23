@@ -133,6 +133,10 @@ export default function Calendar() {
     }
   };
 
+  function getFirstDayOfMonth(year: number, month: number): number {
+    return new Date(year, month, 0).getDay();
+  }
+
   function filterDate(date:string | Date) {
     let actual_date: Date = new Date(date);
     actual_date.setDate(actual_date.getDate() + 1)
@@ -209,85 +213,99 @@ export default function Calendar() {
           <div className="ad"></div>
         </div>
         <div className="container">
-          <div className="table">
-            <div className="wds">
-              <div>SEG.</div>
-              <div className="active">TER.</div>
-              <div>QUA.</div>
-              <div>QUI.</div>
-              <div>SEX.</div>
-              <div>SAB.</div>
-              <div>DOM.</div>
-            </div>
-            <div className="days">
-              {filterDates
-                .filter((res) => new Date(res).getMonth() == monthSelect)
-                .map((res, i) => {
-                  const month = new Date(res).getMonth();
-
-                  let actual_month = extractData(seazonal_dates).find(
-                    (result) => result?.month_index == month
-                  )?.dates;
-                  let seasonal_day = actual_month?.filter(
-                    (result) =>
-                      new Date(result.date).toLocaleDateString() ==
-                      new Date(res).toLocaleDateString()
-                  );
-                  return (
-                    <div className={`container_days ${new Date(res).toLocaleDateString() == new Date(dateSelect).toLocaleDateString() ? "search" : ""}`} key={i}>
-                      <p>{new Date(res).getDate()}</p>
-                      <div className="list_container">
-                        {seasonal_day?.map((dataRes, inList) => {
-                          return (
-                            <div className={`tags_container ${list.some(
-                              (res) => res.name == dataRes.name
-                            )
-                              ? "active"
-                              : ""}`}  onMouseEnter={() => {
-                              setTag(dataRes?.name);
-                            }}
-                            onMouseLeave={() => {
-                              setTag("");
-                            }}>
-                              <p
-                                className="tags_dates"
-                                key={inList}
-                                // title={dataRes.name}
-                                onClick={() => {
-                                  if (
-                                    !list.some(
-                                      (res) => res.name == dataRes.name
-                                    )
-                                  ) {
-                                    setList((list) => [...list, dataRes]);
-                                  }
-                                  if (
-                                    list.some((res) => res.name == dataRes.name)
-                                  ) {
-                                    const copy = list?.filter(
-                                      (resul, index) =>
-                                        resul.name !== dataRes.name
-                                    );
-                                    setList(copy);
-                                  }
-                                }}
-                              >
-                                {dataRes.name.substring(0, 15)}
-                                {dataRes?.name.length >= 15 && "..."}
-                              </p>
-                              {dataRes?.name == tag && (
-                                <p className="tag_description">{tag}</p>
-                              )}
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  );
-                })}
-            </div>
-          </div>
+      <div className="table">
+        {/* Weekday Headers */}
+        <div className="wds">
+          {weekdays.map((res, i) => (
+            <p key={i}>{res.substring(0, 3)}</p> // Render the first 3 letters
+          ))}
         </div>
+
+        {/* Calendar Days Grid */}
+        <div className="days">
+          {(() => {
+            const firstDayIndex = getFirstDayOfMonth(
+              dateSelect.getFullYear(),
+              monthSelect
+            );
+
+            // Generate empty cells for days before the start of the month
+            const emptyCells = Array.from({ length: firstDayIndex }).map(
+              (_, index) => <div className="empty-cell" key={`empty-${index}`} />
+            );
+
+            // Render the actual days of the month
+            const monthDays = filterDates
+              .filter((res) => new Date(res).getMonth() === monthSelect)
+              .map((res, i) => {
+                const date = new Date(res);
+                const seasonal_day = extractData(seazonal_dates)
+                  .find((result) => result?.month_index === date.getMonth())
+                  ?.dates.filter(
+                    (result) =>
+                      new Date(result.date).toLocaleDateString() ===
+                      date.toLocaleDateString()
+                  );
+
+                return (
+                  <div
+                    className={`container_days ${
+                      date.toLocaleDateString() ===
+                      dateSelect.toLocaleDateString()
+                        ? "search"
+                        : ""
+                    }`}
+                    key={i}
+                  >
+                    <p>{date.getDate()}</p>
+
+                    <div className="list_container">
+                      {seasonal_day?.map((dataRes, inList) => (
+                        <div
+                          className={`tags_container ${
+                            list.some((res) => res.name === dataRes.name)
+                              ? "active"
+                              : ""
+                          }`}
+                          key={inList}
+                          onMouseEnter={() => setTag(dataRes.name)}
+                          onMouseLeave={() => setTag("")}
+                        >
+                          <p
+                            className="tags_dates"
+                            onClick={() => {
+                              if (
+                                !list.some((res) => res.name === dataRes.name)
+                              ) {
+                                setList((list) => [...list, dataRes]);
+                              } else {
+                                setList((list) =>
+                                  list.filter(
+                                    (resul) => resul.name !== dataRes.name
+                                  )
+                                );
+                              }
+                            }}
+                          >
+                            {dataRes.name.substring(0, 15)}
+                            {dataRes.name.length >= 15 && "..."}
+                          </p>
+                          {dataRes.name === tag && (
+                            <p className="tag_description">{tag}</p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+              });
+
+            // Combine the empty cells with the month days for proper alignment
+            return [...emptyCells, ...monthDays];
+          })()}
+        </div>
+      </div>
+    </div>
         <div className="ads">
           <div className="ad"></div>
           <div className="ad"></div>

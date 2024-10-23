@@ -31,36 +31,39 @@ const EmailForm: React.FC<EmailFormProps> = ({ list }) => {
       .join('\n');
   };
 
-  // Send email using emailjs
+  // Send email using emailjs with success and error alerts
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
     const emailsToSend = [userEmail, ...contributorEmails];
 
-    for (let emailTo of emailsToSend) {
-      if (form.current) {
-        emailjs
-          .send(
-            'contact_service', // Your service ID
-            'contact_form', // Your template ID
-            {
-              message: formatListForEmail(list),
-              user_name: username,
-              user_email: emailTo,
-            },
-            'g1JrL406VtNUhD9mZ' // Your public key
-          )
-          .then(
-            () => {
-              console.log(`Email sent to ${emailTo}`);
-            },
-            (error) => {
-              console.log(`Failed to send email to ${emailTo}: ${error.text}`);
-            }
-          );
-      } else {
-        console.log('Form is empty');
-      }
+    if (!form.current) {
+      alert('O formulário está vazio.');
+      return;
     }
+
+    emailsToSend.forEach((emailTo) => {
+      emailjs
+        .send(
+          'contact_service', // Your service ID
+          'contact_form', // Your template ID
+          {
+            message: formatListForEmail(list),
+            user_name: username,
+            user_email: emailTo,
+          },
+          'g1JrL406VtNUhD9mZ' // Your public key
+        )
+        .then(
+          () => {
+            console.log(`Email enviado para ${emailTo}`);
+            alert(`✅ Email enviado com sucesso para ${emailTo}!`);
+          },
+          (error) => {
+            console.error(`Erro ao enviar email para ${emailTo}: ${error.text}`);
+            alert(`❌ Erro ao enviar email para ${emailTo}: ${error.text}`);
+          }
+        );
+    });
   };
 
   // Handle adding/removing user email

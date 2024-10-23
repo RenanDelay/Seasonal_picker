@@ -30,11 +30,11 @@ Dia do Hemofílico
 Dia da Criação da Primeira Tipografia no Brasil
 5 Sex
 Dia de São Nepomuceno Neumann
-6 Sáb
+6 Sab
 Dia da Gratidão
-6 Sáb
+6 Sab
 Dia do Astrólogo
-6 Sáb
+6 Sab
 Dia de Reis
 7 Dom
 Dia da Liberdade de Cultos
@@ -54,7 +54,7 @@ Dia do Controle da Poluição por Agrotóxicos
 Dia Nacional do Empresário Contábil
 12 Sex
 Aniversário de Belém
-13 Sáb
+13 Sab
 Dia de Santo Hilário de Poitiers
 14 Dom
 Dia de Vestir seu Pet com Roupa de Gente
@@ -98,13 +98,13 @@ Dia do Cabeleireiro
 Dia de São Canuto
 19 Sex
 Dia do Passista
-20 Sáb
+20 Sab
 Dia Nacional do Fusca
-20 Sáb
+20 Sab
 Dia Nacional da Parteira Tradicional
-20 Sáb
+20 Sab
 Dia do Farmacêutico
-20 Sáb
+20 Sab
 Dia de São Sebastião
 21 Dom
 Dia Mundial da Religião
@@ -138,11 +138,11 @@ Dia de São Timóteo
 Dia Internacional das Aduanas
 26 Sex
 Dia Mundial da Educação Ambiental
-27 Sáb
+27 Sab
 Dia do Orador
-27 Sáb
+27 Sab
 Dia Internacional em Memória das Vítimas do Holocausto
-27 Sáb
+27 Sab
 Dia Internacional do Conservador-Restaurador
 28 Dom
 Dia Internacional da Proteção de Dados
@@ -193,7 +193,7 @@ Dia Mundial das Zonas Úmidas
 Dia de Iemanjá
 2 Sex
 Dia de Nossa Senhora dos Navegantes
-3 Sáb
+3 Sab
 Dia de São Brás
 4 Dom
 Dia Mundial do Câncer
@@ -227,11 +227,11 @@ Dia do Magistério Militar
 Dia do Frevo em Pernambuco
 9 Sex
 Dia de Leitura na Banheira
-10 Sáb
+10 Sab
 Dia do Atleta Profissional
-10 Sáb
+10 Sab
 Dia Mundial das Leguminosas
-10 Sáb
+10 Sab
 Ano-Novo Chinês
 11 Dom
 Dia do Zelador
@@ -273,7 +273,7 @@ Quaresma 2024 (de 14 de fevereiro a 28 de março)
 Dia Internacional de Luta contra o Câncer Infantil
 16 Sex
 Dia do Repórter
-17 Sáb
+17 Sab
 Dia Mundial do Gato
 18 Dom
 Dia Nacional de Combate ao Alcoolismo
@@ -303,9 +303,9 @@ Dia Mundial da Margarita
 Dia Nacional do Movimento Municipalista Brasileiro
 23 Sex
 Dia Nacional do Rotary
-24 Sáb
+24 Sab
 Promulgação da Primeira Constituição Republicana
-24 Sáb
+24 Sab
 Dia da Conquista do Voto Feminino no Brasil
 25 Dom
 Dia da Criação do Ministério das Comunicações
@@ -380,7 +380,7 @@ Dia do Fuzileiro Naval
 Dia Nacional da Advocacia Pública
 8 Sex
 Dia Internacional da Mulher | 8 de Março
-9 Sáb
+9 Sab
 Dia Mundial do DJ
 10 Dom
 Dia do Sogro
@@ -436,15 +436,15 @@ Dia Mundial do Sono
 Dia Internacional de Combate à Islamofobia
 15 Sex
 Dia das Confissões Sinceras
-16 Sáb
+16 Sab
 Dia Nacional de Conscientização sobre as Mudanças Climáticas
-16 Sáb
+16 Sab
 Dia Nacional do Ouvidor
-16 Sáb
+16 Sab
 Dia do Agente Penitenciário Federal
-16 Sáb
+16 Sab
 Dia do Agente Federal de Execução Penal
-16 Sáb
+16 Sab
 Dia do Médico Clínico
 17 Dom
 Aniversário de Aracaju
@@ -504,17 +504,17 @@ Dia Internacional da Cefaleia em Salvas
 Dia do Tiramisù
 22 Sex
 Dia Mundial da Água
-23 Sáb
+23 Sab
 Dia Mundial da Meteorologia
-23 Sáb
+23 Sab
 Dia do Optometrista
-23 Sáb
+23 Sab
 Aniversário de Florianópolis
-23 Sáb
+23 Sab
 Dia Nacional do Piso Salarial dos Professores
-23 Sáb
+23 Sab
 Dia Mundial do Acupunturista
-23 Sáb
+23 Sab
 Hora do Planeta
 24 Dom
 Dia Internacional para o Direito à Verdade para as Vítimas de Graves Violações dos Direitos Humanos
@@ -568,12 +568,12 @@ Sexta-feira Santa
 Aniversário de Curitiba
 29 Sex
 Aniversário de Salvador
-30 Sáb
+30 Sab
 Dia Mundial do Transtorno Bipolar
-30 Sáb
+30 Sab
 Dia Internacional do Lixo Zero
-30 Sáb
-Sábado de Aleluia
+30 Sab
+Sabado de Aleluia
 31 Dom
 Páscoa
 31 Dom
@@ -621,11 +621,11 @@ Dia das Telecomunicações
 Dia Internacional da Consciência
 5 Sex
 Dia do Filho
-6 Sáb
+6 Sab
 Dia Internacional do Esporte para o Desenvolvimento e pela Paz
-6 Sáb
+6 Sab
 Dia Nacional de Mobilização pela Promoção da Saúde e Qualidade de Vida
-6 Sáb
+6 Sab
 Dia Mundial da Atividade Física
 7 Dom
 Dia do Jornalista
@@ -673,15 +673,15 @@ Dia do Obstetra
 Dia Internacional do Voo Espacial Tripulado
 12 Sex
 Dia Nacional do Humorista
-13 Sáb
+13 Sab
 Dia do Office-Boy
-13 Sáb
+13 Sab
 Dia do Hino Nacional Brasileiro
-13 Sáb
+13 Sab
 Dia do Jovem
-13 Sáb
+13 Sab
 Dia do Beijo
-13 Sáb
+13 Sab
 Aniversário de Fortaleza
 14 Dom
 Dia Pan-Americano
@@ -735,11 +735,11 @@ Dia do Exército Brasileiro
 Dia de Santo Expedito
 19 Sex
 Dia dos Povos Indígenas (Dia do Índio)
-20 Sáb
+20 Sab
 Dia do Diplomata
-20 Sáb
+20 Sab
 Dia do Disco
-20 Sáb
+20 Sab
 Dia da Língua Chinesa
 21 Dom
 Tiradentes
@@ -841,15 +841,15 @@ Dia do Juiz Trabalhista
 Dia Mundial da Propriedade Intelectual
 26 Sex
 Dia de Abraçar um Australiano
-27 Sáb
+27 Sab
 Dia da Empregada Doméstica
-27 Sáb
+27 Sab
 Dia Mundial do Design Gráfico
-27 Sáb
+27 Sab
 Dia do Engraxate
-27 Sáb
+27 Sab
 Dia Mundial da Medicina Veterinária
-27 Sáb
+27 Sab
 Dia do Código Morse
 28 Dom
 Dia da Sogra
@@ -900,11 +900,11 @@ Dia Nacional do Taquígrafo
 Dia do Sertanejo
 3 Sex
 Dia do Pau-Brasil
-4 Sáb
+4 Sab
 Dia de Star Wars
-4 Sáb
+4 Sab
 Dia Internacional do Respeito pelas Galinhas
-4 Sáb
+4 Sab
 Dia Internacional do Bombeiro
 5 Dom
 Dia Nacional do Líder Comunitário
@@ -986,11 +986,11 @@ Dia da Cavalaria
 Dia do Campo
 10 Sex
 Dia Internacional de Atenção à Pessoa com Lúpus
-11 Sáb
+11 Sab
 Dia Nacional do Reggae
-11 Sáb
+11 Sab
 Dia Mundial das Aves Migratórias
-11 Sáb
+11 Sab
 Dia da Integração do Telégrafo no Brasil
 12 Dom
 Dia das Mães
@@ -1054,17 +1054,17 @@ Dia Internacional Contra a Homofobia
 Dia Mundial da Reciclagem
 17 Sex
 Dia Mundial da Pastelaria
-18 Sáb
+18 Sab
 Dia dos Vidraceiros
-18 Sáb
+18 Sab
 Dia Internacional dos Museus
-18 Sáb
+18 Sab
 Dia Nacional do Cocktail
-18 Sáb
+18 Sab
 Dia Nacional da Luta Antimanicomial
-18 Sáb
+18 Sab
 Dia Nacional de Combate ao Abuso e à Exploração Sexual Infantil
-18 Sáb
+18 Sab
 Dia de Conscientização sobre a Necessidade de Vacina Contra HIV/Aids
 19 Dom
 Dia do Físico
@@ -1142,29 +1142,29 @@ Dia Nacional do Cigano
 Dia Nacional do Milho
 24 Sex
 Dia Nacional do Café
-25 Sáb
+25 Sab
 Dia da Indústria
-25 Sáb
+25 Sab
 Dia do Massagista
-25 Sáb
+25 Sab
 Dia da Toalha
-25 Sáb
+25 Sab
 Dia Internacional do Sapateado
-25 Sáb
+25 Sab
 Dia Internacional das Crianças Desaparecidas
-25 Sáb
+25 Sab
 Dia do Orgulho Geek
-25 Sáb
+25 Sab
 Dia da Costureira
-25 Sáb
+25 Sab
 Dia Nacional do Respeito ao Contribuinte
-25 Sáb
+25 Sab
 Dia Internacional da Tireoide
-25 Sáb
+25 Sab
 Dia do Trabalhador Rural
-25 Sáb
+25 Sab
 Dia da África
-25 Sáb
+25 Sab
 Dia Nacional da Adoção
 26 Dom
 Dia Nacional de Combate ao Glaucoma
@@ -1235,19 +1235,19 @@ Dia Mundial de Combate ao Fumo
 31 Sex
 Dia do Aeroporto
 Junho
-1 Sáb
+1 Sab
 Dia da Imprensa
-1 Sáb
+1 Sab
 Dia de São Justino
-1 Sáb
+1 Sab
 Dia Mundial dos Pais
-1 Sáb
+1 Sab
 Semana do Meio Ambiente
-1 Sáb
+1 Sab
 Dia Mundial do Leite
-1 Sáb
+1 Sab
 Início do Junho Vermelho | Doação de Sangue (de 1 a 30)
-1 Sáb
+1 Sab
 Início do Junho Verde | Proteção do Meio Ambiente (de 1 a 30)
 2 Dom
 Dia de Sair mais Cedo do Trabalho
@@ -1301,13 +1301,13 @@ Dia da Língua Russa
 Dia da Liberdade de Imprensa
 7 Sex
 Dia Mundial da Segurança dos Alimentos
-8 Sáb
+8 Sab
 Dia do Oceanógrafo
-8 Sáb
+8 Sab
 Dia do Citricultor
-8 Sáb
+8 Sab
 Dia de São Medardo
-8 Sáb
+8 Sab
 Dia Mundial dos Oceanos
 9 Dom
 Dia da Imunização
@@ -1353,11 +1353,11 @@ Dia do Solista
 Dia Mundial do Doador de Sangue
 14 Sex
 Dia Universal de Deus
-15 Sáb
+15 Sab
 Dia Mundial da Consciencialização da Violência contra a Pessoa Idosa
-15 Sáb
+15 Sab
 Aniversário da Emancipação do Acre
-15 Sáb
+15 Sab
 Dia Mundial do Vento
 16 Dom
 Dia de São Francisco Régis
@@ -1427,13 +1427,13 @@ Dia Nacional de Controle da Asma
 Dia Nacional de Luta Contra a Esclerose Lateral Amiotrófica (ELA)
 21 Sex
 Dia Mundial da Girafa
-22 Sáb
+22 Sab
 Dia de Levar o Cachorro para o Trabalho
-22 Sáb
+22 Sab
 Dia do Orquidófilo
-22 Sáb
+22 Sab
 Dia do Aeroviário
-22 Sáb
+22 Sab
 Dia do Economiário
 23 Dom
 Dia Mundial do Desporto Olímpico
@@ -1505,23 +1505,23 @@ Dia de Santo Irineu
 Dia da Renovação Espiritual
 28 Sex
 Dia Internacional do Orgulho LGBT
-29 Sáb
+29 Sab
 Dia do Papa
-29 Sáb
+29 Sab
 Dia do Pescador
-29 Sáb
+29 Sab
 Dia do Dublador
-29 Sáb
+29 Sab
 Dia do Telefonista
-29 Sáb
+29 Sab
 Dia do Pescador Amador
-29 Sáb
+29 Sab
 Dia Nacional da Aviação de Segurança Pública do Brasil
-29 Sáb
+29 Sab
 Dia do Engenheiro de Petróleo
-29 Sáb
+29 Sab
 Dia Internacional dos Trópicos
-29 Sáb
+29 Sab
 Dia de São Pedro e São Paulo
 30 Dom
 Dia da Mídia Social
@@ -1566,15 +1566,15 @@ Dia de Santa Isabel
 Dia da Independência dos Estados Unidos
 5 Sex
 Dia Mundial do Biquíni
-6 Sáb
+6 Sab
 Dia da criação do IBGE
-6 Sáb
+6 Sab
 Dia Internacional do Cooperativismo
-6 Sáb
+6 Sab
 Dia de Santa Maria Goretti
-6 Sáb
+6 Sab
 Dia Mundial das Zoonoses
-6 Sáb
+6 Sab
 Dia de Levar o seu Webmaster para Almoçar
 7 Dom
 Dia de Construir um Espantalho
@@ -1608,13 +1608,13 @@ Dia Mundial da População
 Dia Nacional do Socorrista
 12 Sex
 Dia do Engenheiro Florestal
-13 Sáb
+13 Sab
 Dia do Engenheiro de Saneamento
-13 Sáb
+13 Sab
 Dia dos Compositores e Cantores Sertanejos
-13 Sáb
+13 Sab
 Dia do Cantor
-13 Sáb
+13 Sab
 Dia Mundial do Rock
 14 Dom
 Dia do Propagandista de Laboratório
@@ -1662,15 +1662,15 @@ Dia da Caridade
 Dia Nacional do Futebol
 19 Sex
 Dia de São Símaco
-20 Sáb
+20 Sab
 Dia Nacional do Biscoito
-20 Sáb
+20 Sab
 Dia Pan-americano do Engenheiro
-20 Sáb
+20 Sab
 Chegada do Homem à Lua
-20 Sáb
+20 Sab
 Dia do Amigo e Internacional da Amizade
-20 Sáb
+20 Sab
 Dia Internacional do Xadrez
 21 Dom
 Dia Nacional do Garimpeiro
@@ -1720,17 +1720,17 @@ Abertura das Olimpíadas de Paris 2024
 Dia da Vovó
 26 Sex
 Dia dos Avós
-27 Sáb
+27 Sab
 Dia de Levar suas Plantas para Passear
-27 Sáb
+27 Sab
 Dia do Motociclista
-27 Sáb
+27 Sab
 Dia Mundial de Conscientização e Combate ao Câncer de Cabeça e Pescoço
-27 Sáb
+27 Sab
 Dia de São Pantaleão de Nicomédia
-27 Sáb
+27 Sab
 Dia do Pediatra
-27 Sáb
+27 Sab
 Dia Nacional da Prevenção de Acidentes do Trabalho
 28 Dom
 Dia do Agricultor
@@ -1777,13 +1777,13 @@ Início do Agosto Verde-Claro | Linfoma (de 1 a 31)
 Dia de Santo Eusébio de Vercelli
 2 Sex
 Dia Internacional da Cerveja
-3 Sáb
+3 Sab
 Dia do Capoeirista
-3 Sáb
+3 Sab
 Dia do Tintureiro
-3 Sáb
+3 Sab
 Dia de Santa Lídia
-3 Sáb
+3 Sab
 Dia do Fim da Censura no Brasil
 4 Dom
 Dia do Sacerdote
@@ -1829,13 +1829,13 @@ Dia Internacional dos Povos Indígenas
 Dia Nacional da Equoterapia
 9 Sex
 Dia Interamericano da Qualidade do Ar
-10 Sáb
+10 Sab
 Dia de São Lourenço
-10 Sáb
+10 Sab
 Dia Internacional do Biodiesel
-10 Sáb
+10 Sab
 Dia da Solidariedade Cristã
-10 Sáb
+10 Sab
 Dia da Preguiça
 11 Dom
 Dia dos Pais
@@ -1905,13 +1905,13 @@ Aniversário de Teresina
 Dia do Auxiliar de Almoxarifado
 16 Sex
 Dia do Filósofo
-17 Sáb
+17 Sab
 Dia de São Jacinto
-17 Sáb
+17 Sab
 Dia do Patrimônio Histórico
-17 Sáb
+17 Sab
 Dia Nacional da Construção Social
-17 Sáb
+17 Sab
 Dia do Pão de Queijo
 18 Dom
 Dia de Santa Helena
@@ -1969,15 +1969,15 @@ Dia Internacional para Relembrar o Tráfico de Escravos e sua Abolição
 Dia do Aviador Naval
 23 Sex
 Dia da Intendência
-24 Sáb
+24 Sab
 Dia da Música Estranha
-24 Sáb
+24 Sab
 Dia de São Bartolomeu
-24 Sáb
+24 Sab
 Dia Nacional da Comunidade Ucraniana
-24 Sáb
+24 Sab
 Dia da Infância
-24 Sáb
+24 Sab
 Dia do Artista
 25 Dom
 Dia do Feirante
@@ -2031,11 +2031,11 @@ Dia de São Cesário de Arles
 Dia Nacional de Conscientização sobre a Esclerose Múltipla
 30 Sex
 Dia Internacional das Vítimas de Desaparecimentos Forçados
-31 Sáb
+31 Sab
 Dia de São Raimundo Nonato
-31 Sáb
+31 Sab
 Dia Internacional do Blog
-31 Sáb
+31 Sab
 Dia do Nutricionista
 Setembro
 1 Dom
@@ -2096,15 +2096,15 @@ Dia do Irmão
 Dia do Alfaiate
 6 Sex
 Dia do Sexo
-7 Sáb
+7 Sab
 Dia da Independência do Brasil - 7 de Setembro
-7 Sáb
+7 Sab
 Dia de Santa Regina
-7 Sáb
+7 Sab
 Dia de São Clodoaldo
-7 Sáb
+7 Sab
 Dia Internacional do Ar Limpo para um Céu Azul
-7 Sáb
+7 Sab
 Dia Mundial da Barba
 8 Dom
 Dia Mundial da Alfabetização
@@ -2158,9 +2158,9 @@ Dia Nacional de Luta dos Acidentados por Fontes Radioativas
 Dia de São João Crisóstomo
 13 Sex
 Dia do Agrônomo
-14 Sáb
+14 Sab
 Dia da Cruz
-14 Sáb
+14 Sab
 Dia do Frevo
 15 Dom
 Dia de Nossa Senhora das Dores
@@ -2222,27 +2222,27 @@ Dia do Funcionário Municipal
 Dia do Baterista
 20 Sex
 Revolução Farroupilha (Dia do Gaúcho)
-21 Sáb
+21 Sab
 Dia do Adolescente
-21 Sáb
+21 Sab
 Dia do Fazendeiro
-21 Sáb
+21 Sab
 Dia dos Tios: Dia da Tia e Dia do Tio
-21 Sáb
+21 Sab
 Dia Internacional da Paz
-21 Sáb
+21 Sab
 Dia Mundial do Doador de Medula Óssea
-21 Sáb
+21 Sab
 Dia de São Mateus
-21 Sáb
+21 Sab
 Dia Mundial da Doença de Alzheimer
-21 Sáb
+21 Sab
 Dia Nacional de Conscientização da Doença de Alzheimer
-21 Sáb
+21 Sab
 Dia Nacional de Luta da Pessoa com Deficiência
-21 Sáb
+21 Sab
 Dia Mundial da Gratidão
-21 Sáb
+21 Sab
 Dia da Árvore
 22 Dom
 Dia do Contador
@@ -2322,17 +2322,17 @@ Dia Nacional do Turismólogo e dos Profissionais do Turismo
 Dia do Encanador
 27 Sex
 Dia de São Cosme e Damião
-28 Sáb
+28 Sab
 Dia de Fazer Perguntas Tontas
-28 Sáb
+28 Sab
 Dia do Hidrógrafo
-28 Sáb
+28 Sab
 Dia Mundial de Luta contra a Raiva
-28 Sáb
+28 Sab
 Dia de São Venceslau
-28 Sáb
+28 Sab
 Dia Internacional do Acesso Universal à Informação
-28 Sáb
+28 Sab
 Dia Internacional do Coelho
 29 Dom
 Dia Mundial do Petróleo
@@ -2425,15 +2425,15 @@ Dia do Médico do Trabalho
 Semana Mundial do Espaço (dias 4 a 10)
 4 Sex
 Dia Nacional dos Agentes de Combate às Endemias
-5 Sáb
+5 Sab
 Dia de São Benedito
-5 Sáb
+5 Sab
 Dia Nacional da Micro e Pequena Empresa
-5 Sáb
+5 Sab
 Dia Mundial dos Professores
-5 Sáb
+5 Sab
 Dia da Promulgação da Constituição de 1988
-5 Sáb
+5 Sab
 Dia da Ave
 6 Dom
 Dia de São Bruno
@@ -2489,29 +2489,29 @@ Dia do Deficiente Físico
 Dia de Yom Kipur
 11 Sex
 Dia Mundial do Ovo
-12 Sáb
+12 Sab
 Dia das Crianças
-12 Sáb
+12 Sab
 Nossa Senhora Aparecida
-12 Sáb
+12 Sab
 Dia do Engenheiro Agrônomo
-12 Sáb
+12 Sab
 Dia do Corretor de Seguros
-12 Sáb
+12 Sab
 Descobrimento da América
-12 Sáb
+12 Sab
 Dia do Rio Tietê
-12 Sáb
+12 Sab
 Dia do Cirurgião Pediátrico
-12 Sáb
+12 Sab
 Dia Mundial da Artrite Reumatoide
-12 Sáb
+12 Sab
 2.º Dia Mundial das Aves Migratórias
-12 Sáb
+12 Sab
 Dia Nacional do Lobo-Guará
-12 Sáb
+12 Sab
 Dia Nacional da Leitura
-12 Sáb
+12 Sab
 Dia Mundial de Cuidados Paliativos
 13 Dom
 Dia Mundial da Trombose
@@ -2579,21 +2579,21 @@ Dia de São Lucas
 Dia do Médico
 18 Sex
 Dia Mundial da Menopausa
-19 Sáb
+19 Sab
 Dia do Profissional de Informática
-19 Sáb
+19 Sab
 Dia do Guarda Noturno
-19 Sáb
+19 Sab
 Dia Nacional da Inovação
-19 Sáb
+19 Sab
 Dia do Profissional de Tecnologia da Informação
-19 Sáb
+19 Sab
 Dia do Piauí
-19 Sáb
+19 Sab
 Dia Nacional de Combate à Sífilis e à Sífilis Congênita
-19 Sáb
+19 Sab
 Dia do Operador de Caixa
-19 Sáb
+19 Sab
 Dia Internacional de Combate ao Câncer de Mama
 20 Dom
 Dia do Maquinista
@@ -2673,9 +2673,9 @@ Dia Mundial do Macarrão
 Dia Mundial da Ópera
 25 Sex
 Dia de ser Punk por um Dia
-26 Sáb
+26 Sab
 Dia do Trabalhador da Construção Civil
-26 Sáb
+26 Sab
 Dia do Metroviário
 27 Dom
 Dia Mundial do Patrimônio Audiovisual
@@ -2756,11 +2756,11 @@ Início do Novembro Azul | Câncer de Próstata (de 1 a 30)
 Início do Novembro Azul | Diabetes (de 1 a 30)
 1 Sex
 Início do Novembro Roxo | Prematuridade (de 1 a 30)
-2 Sáb
+2 Sab
 Finados
-2 Sáb
+2 Sab
 Dia dos Mortos
-2 Sáb
+2 Sab
 Dia Internacional pelo Fim da Impunidade dos Crimes contra Jornalistas
 3 Dom
 Dia Nacional do Quilo
@@ -2806,13 +2806,13 @@ Dia do Radialista
 Dia do Radiologista
 8 Sex
 Dia Mundial do Urbanismo
-9 Sáb
+9 Sab
 Dia do Hoteleiro
-9 Sáb
+9 Sab
 Dia Nacional dos Clubes Esportivos Sociais
-9 Sáb
+9 Sab
 Dia Internacional contra o Fascismo e o Antissemitismo
-9 Sáb
+9 Sab
 Dia do Técnico em Eletrotécnica
 10 Dom
 Dia Mundial da Ciência pela Paz e pelo Desenvolvimento
@@ -2862,15 +2862,15 @@ Dia do Esporte Amador
 Dia do Joalheiro
 15 Sex
 Dia Nacional da Umbanda
-16 Sáb
+16 Sab
 Dia Internacional da Tolerância
-16 Sáb
+16 Sab
 Dia Nacional dos Ostomizados
-16 Sáb
+16 Sab
 Dia Nacional de Atenção à Dislexia
-16 Sáb
+16 Sab
 Dia Nacional da Amazônia Azul
-16 Sáb
+16 Sab
 Dia do Não Fumar
 17 Dom
 Dia Internacional dos Estudantes
@@ -2936,11 +2936,11 @@ Dia da Comunidade Libanesa no Brasil
 Dia do Músico
 22 Sex
 Dia de Criar seu Próprio País
-23 Sáb
+23 Sab
 Dia do Engenheiro Eletricista
-23 Sáb
+23 Sab
 Dia Nacional de Combate ao Câncer Infanto-Juvenil
-23 Sáb
+23 Sab
 Dia Nacional de Combate ao Dengue
 24 Dom
 Dia do Quadro Auxiliar de Oficiais (QAO)
@@ -2974,17 +2974,17 @@ Black Friday
 Dia Internacional de Solidariedade com o Povo da Palestina
 29 Sex
 Dia Nacional da Onça-Pintada
-30 Sáb
+30 Sab
 Dia do Evangélico
-30 Sáb
+30 Sab
 Dia da Amizade Argentino-Brasileira
-30 Sáb
+30 Sab
 Dia de Celebração da Amizade Brasil-Argentina
-30 Sáb
+30 Sab
 Dia em Memória de todas as Vítimas de Armas Químicas
-30 Sáb
+30 Sab
 Dia do Estatuto da Terra
-30 Sáb
+30 Sab
 Dia do Teólogo
 Dezembro
 1 Dom
@@ -3049,13 +3049,13 @@ Dia Nacional do Extensionista Rural
 Dia de São Nicolau
 6 Sex
 Dia Nacional de Mobilização dos Homens pelo Fim da Violência contra as Mulheres
-7 Sáb
+7 Sab
 Dia lnternacional da Aviação Civil
-7 Sáb
+7 Sab
 Dia Nacional da Assistência Social
-7 Sáb
+7 Sab
 Dia Nacional da Silvicultura
-7 Sáb
+7 Sab
 Dia do Médico Cirurgião Plástico
 8 Dom
 Dia da Justiça
@@ -3125,15 +3125,15 @@ Dia do Pedreiro
 Dia Nacional do Forró
 13 Sex
 Dia do Lapidador
-14 Sáb
+14 Sab
 Dia Nacional do Ministério Público
-14 Sáb
+14 Sab
 Dia Nacional de Combate à Pobreza
-14 Sáb
+14 Sab
 Dia do Engenheiro de Pesca
-14 Sáb
+14 Sab
 Dia do Médico Alergista
-14 Sáb
+14 Sab
 Início da Semana de Mobilização Nacional para Doação de Medula Óssea (14 a 21)
 15 Dom
 Dia do Arquiteto
@@ -3171,9 +3171,9 @@ Aniversário da Emancipação do Paraná
 Dia do Mecânico
 20 Sex
 Dia Internacional da Solidariedade Humana
-21 Sáb
+21 Sab
 Dia do Atleta
-21 Sáb
+21 Sab
 Início do Verão - Solstício de Verão
 22 Dom
 Aniversário da Criação de Rondônia
@@ -3195,15 +3195,15 @@ Dia de São Estevão
 Dia da Lembrança
 27 Sex
 Dia Internacional de Preparação Epidemiológica
-28 Sáb
+28 Sab
 Dia Nacional do Cooperativismo de Crédito
-28 Sáb
+28 Sab
 Dia do Salva-vidas
-28 Sáb
+28 Sab
 Aniversário de Rio Branco
-28 Sáb
+28 Sab
 Dia do Petroquímico
-28 Sáb
+28 Sab
 Dia da Marinha Mercante
 30 Seg
 Festival das Mudanças de Última Hora

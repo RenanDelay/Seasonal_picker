@@ -16,10 +16,10 @@ type DateInfo = {
   export function extractData(inputText: string): MonthData[] {
 
     const datePattern = /^(\d{1,2}) (\w{3})$/;
-
     const lines = inputText.split("\n").filter((line) => line.trim() !== "");
   
     const result: MonthData[] = [];
+    console.log(result)
     let currentMonth: MonthData | any
     let currentDate: DateInfo | null = null;
   
@@ -62,6 +62,6 @@ type DateInfo = {
     if (currentMonth) {
       result.push(currentMonth);
     }
-  
+
     return result;
   }
